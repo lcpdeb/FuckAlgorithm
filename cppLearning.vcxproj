@@ -90,6 +90,10 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>D:\Self-Learning-cpp\cppLearning\Application\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,12 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Application\Source\twoSum.cpp" />
+    <ClCompile Include="Application\Source\user_algorithm.cpp" />
     <ClCompile Include="cppLearning.cpp" />
-    <ClCompile Include="user_algorithm.cpp" />
-    <ClCompile Include="twoSum.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="user_algorithm.h" />
+    <ClInclude Include="Application\Include\queue.h" />
+    <ClInclude Include="Application\Include\user_algorithm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

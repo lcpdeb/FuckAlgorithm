@@ -4,6 +4,7 @@
 
 /************************** Module Include *********************************/
 #include "user_algorithm.h"
+#include "queue.h"
 
 /************************** Namespace Declaration **************************/
 using namespace std;
@@ -41,54 +42,23 @@ vector<int> coins = { 1,3,5,7 };
 BackTrace CBackTrace;
 vector<int> numbers = { 1,2,3 };
 
-class Student
+BFS CBFS;
+vector<string> deadCipher = { "8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888" };
+
+
+
+class TEST_ERROR
 {
 public:
-    Student();
-    Student(string name);
-    Student(const Student& stu);
-    ~Student();
-    void setName(string name);
-    string getName(void);
-private:
-    string m_strName;
+    string a ="error";
+    int b = 3;
 };
 
-Student::Student()
-{
-    m_strName = "NULL";
-    cout << "Student无参数构造初始化" << endl;
+TEST_ERROR test_error;
+
+void test(void) {
+    throw string("nmsl");
 }
-
-Student::Student(string name)
-{
-    m_strName = name;
-    cout << "Student有参数构造初始化" << endl;
-}
-
-Student::Student(const Student& stu)
-{
-    cout << "Student拷贝构造初始化" << endl;
-}
-
-Student::~Student()
-{
-    cout << "Student析构函数" << endl;
-}
-
-void Student::setName(string name)
-{
-    m_strName = name;
-    cout << "设置Student类名称" << endl;
-}
-
-string Student::getName(void)
-{
-    cout << "返回Student类名称" << endl;
-    return m_strName;
-}
-
-
 
 int main()
 {
@@ -100,9 +70,61 @@ int main()
     //cout << stu->getName() << endl;
     //delete stu;
     //stu = NULL;
- //   cout << CDynamicProgramming.FibNumCalculate(20) << endl;
- //   cout << CDynamicProgramming.coinChage(coins,20)<<endl;
-    CBackTrace.permute(numbers);
-    system("pause");
+
+    //cout << CDynamicProgramming.FibNumCalculate(20) << endl;
+    //cout << CDynamicProgramming.coinChage(coins,20)<<endl;
+
+    //CBackTrace.permute(numbers);
+    //CBackTrace.NQueen(1);
+
+    //BFS::TreeNode tree9(9);
+    //BFS::TreeNode tree15(15);
+    //BFS::TreeNode tree7(7);
+    //BFS::TreeNode tree20(20, &tree15, &tree7);
+    //BFS::TreeNode tree3(3, &tree9, &tree20);
+    //int result = CBFS.minDepth(&tree3);
+    //int t = CBFS.openLock(deadCipher, "8888");
+
+
+    //try {
+    //    cout << test_error.a << endl;
+    //    test();
+    //}
+    //catch (string *s) {
+    //    cout << s  << endl;
+    //}
+    //catch (...) {
+    //    cout << "unknown error" << endl;
+    //}
+    //system("pause");
+    typedef string testType;
+    testType temp = "";
+    Queue<testType>* p = new Queue<testType>(6);
+    p->TraverseQueue();
+    p->DeQueue(temp);
+
+    p->EnQueue("a");
+    p->EnQueue("b");
+    p->EnQueue("c");
+    p->EnQueue("d");
+    p->EnQueue("e");
+    p->TraverseQueue();
+
+    p->EnQueue("f");
+    p->DeQueue(temp);
+    p->TraverseQueue();
+
+    p->EnQueue("g");
+    p->TraverseQueue();
+
+    p->DeQueue(temp);
+    p->DeQueue(temp);
+    p->DeQueue(temp);
+    p->EnQueue("h");
+    p->EnQueue("i");
+    p->EnQueue("j");
+    p->EnQueue("k");
+    p->TraverseQueue();
+
     return 0;
 }

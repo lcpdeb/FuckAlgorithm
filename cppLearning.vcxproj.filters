@@ -18,15 +18,18 @@
     <ClCompile Include="cppLearning.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="twoSum.cpp">
+    <ClCompile Include="Application\Source\twoSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="user_algorithm.cpp">
+    <ClCompile Include="Application\Source\user_algorithm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="user_algorithm.h">
+    <ClInclude Include="Application\Include\user_algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Include\queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
