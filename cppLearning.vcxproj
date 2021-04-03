@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application\Include\queue.h" />
+    <ClInclude Include="Application\Include\stack.h" />
     <ClInclude Include="Application\Include\user_algorithm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

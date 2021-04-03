@@ -32,5 +32,8 @@
     <ClInclude Include="Application\Include\queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Application\Include\stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

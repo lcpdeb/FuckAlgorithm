@@ -105,7 +105,7 @@ int main()
 
     p->EnQueue("a");
     p->EnQueue("b");
-    p->EnQueue("c");
+    p->EnQueue("cdd");
     p->EnQueue("d");
     p->EnQueue("e");
     p->TraverseQueue();

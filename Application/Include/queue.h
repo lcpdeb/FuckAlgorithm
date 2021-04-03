@@ -3,8 +3,6 @@
 using namespace std;
 
 
-
-
 /*
 * 环形队列C++实现
 */
@@ -23,7 +21,7 @@ public:
 	void TraverseQueue(void);
 private:
 	T* m_pQueue;					//队列数组指针
-	int m_Head;
+	T m_Head;
 	int m_Tail;
 	int m_QueueLength;				//队列元素个数
 	int m_QueueCapacity;			//队列数组容量
@@ -107,10 +105,10 @@ bool Queue<T>::DeQueue(T& element)
 template <typename T>
 void Queue<T>::TraverseQueue(void)
 {
-	cout << "************* Printing all elements **************" << endl;
+	cout << "************* Printing all elements in queue **************" << endl;
 	for (int i = m_Head; i < m_QueueLength + m_Head; i++)
 	{
 		cout << m_pQueue[i % m_QueueCapacity] << endl;
 	}
-	cout << "******** Printed all elements completedly ********" << endl;
+	cout << "******** Printed all elements in queue completedly ********" << endl;
 }
