@@ -21,7 +21,7 @@ public:
 	void TraverseQueue(void);
 private:
 	T* m_pQueue;					//队列数组指针
-	T m_Head;
+	int m_Head;
 	int m_Tail;
 	int m_QueueLength;				//队列元素个数
 	int m_QueueCapacity;			//队列数组容量
